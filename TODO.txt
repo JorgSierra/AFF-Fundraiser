@@ -1,0 +1,4 @@
+Set video max height
+Create the paypal pool
+Link the pool
+Try to fix the skip button to always stay in the video
