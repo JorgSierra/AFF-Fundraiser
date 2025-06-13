@@ -86,7 +86,7 @@ a {
 
 .skip-btn {
   position: absolute;
-  bottom: 180px;
+  bottom: 100px;
   right: 0;
   padding: 10px 30px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -103,7 +103,7 @@ a {
 }
 
 #contentBox {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   background-color: black;
@@ -208,9 +208,10 @@ footer {
 }
 
 @media screen and ((max-height: 160px) or (max-width: 120px)){
-  #landingBox {
+  #landingBox, #contentBox {
     display: none;
   }
+
   #notSupported {
     display: block;
     position: fixed;
