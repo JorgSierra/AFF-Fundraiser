@@ -9,8 +9,8 @@ const skipBtn = document.getElementById("skipBtn");
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // landing.style.display = "none";
-    // content.style.display = "none";
+    landing.style.display = "none";
+    content.style.display = "flex";
 });
 
 clickOverlay.addEventListener('click', () => {

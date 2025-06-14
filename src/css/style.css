@@ -82,6 +82,7 @@ a {
   display: block;
   width: 100%;
   object-fit: cover;
+  max-height: 70svh;
 }
 
 .skip-btn {
@@ -207,9 +208,14 @@ footer {
   }
 }
 
-@media screen and ((max-height: 160px) or (max-width: 120px)){
-  #landingBox, #contentBox {
+@media screen and ((max-height: 160px) or (max-width: 330px)){
+  #landingBox {
     display: none;
+  }
+
+  #contentBox {
+    background-color: #ff0000;
+    display: none !important;
   }
 
   #notSupported {

@@ -1,4 +1,4 @@
-Set video max height
-Create the paypal pool
-Link the pool
 Try to fix the skip button to always stay in the video
+Fix the non suported media ranges: background, do not show the boxes
+
+https://www.paypal.com/pool/9fGTs5jhL5
