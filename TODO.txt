@@ -1,1 +1,3 @@
 Fix the skip button to always stay in the video
+Paypal charges donor per transaction -> Change to venmo: Implement modal with qr and link. Quick fix just link
+Implement donations tracker
