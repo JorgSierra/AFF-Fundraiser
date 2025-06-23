@@ -22,7 +22,8 @@ video.addEventListener('loadedmetadata', () => {
 clickOverlay.addEventListener('click', () => {
     landingLogo.classList.add('video');
     landingPrompt.classList.add('video');
-    videoContainer.classList.add('video')
+    videoContainer.classList.add('video');
+    clickOverlay.classList.add('video');
     video.classList.add('video');
     video.play();
     video.muted = false;
