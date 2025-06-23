@@ -27,10 +27,10 @@ a {
   font-weight: 700;
 }
 
-.jost-ligth {
+.jost-light {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300; /* ligth */
+  font-weight: 300; /* light */
   font-style: normal;
 }
 
@@ -69,7 +69,7 @@ a {
   animation: blink 0.8s infinite;
 }
 
-#landingLogo.video, #clickPrompt.video, #videoContainer {
+#landingLogo.video, #clickPrompt.video, #clickOverlay.video #videoContainer {
   display: none;
 }
 
@@ -137,6 +137,8 @@ a {
 }
 
 .donate-button {
+  max-width: 295px;
+  width: 52svw;
   background-color: #ff0000;
   color: white;
   padding: 15px 30px;
@@ -144,6 +146,7 @@ a {
   border-radius: 5px;
   font-size: 1.2em;
   text-decoration: none;
+  text-align: center;
   margin: 20px 0;
   display: inline-block;
 }
@@ -208,7 +211,7 @@ footer {
   }
 }
 
-@media screen and ((max-height: 160px) or (max-width: 330px)){
+@media screen and ((max-height:350px) or (max-width: 360px)){
   #landingBox {
     display: none;
   }

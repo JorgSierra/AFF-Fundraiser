@@ -1,0 +1,86 @@
+.donations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-container {
+    flex-shrink: 0;
+    position: relative;
+    width: 65svw;
+    max-width: 800px;
+    height: 30px;
+    background: repeating-linear-gradient(
+        45deg,
+        yellow,
+        yellow 10px,
+        black 10px,
+        black 20px
+    );
+    border: 2px solid yellow;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 25px yellow;
+    margin: 50px 0 10px 0;
+}
+
+.progress-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    transform-origin: right;
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+}
+
+.progress-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+}
+
+.donations-list {
+    width: 80%;
+    max-width: 600px;
+    background-color: #111;
+    border: 2px solid #fff;
+    padding: 10px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    box-shadow: 0 0 15px yellow;
+    margin: 20px;
+}
+
+.donations-list h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.donation-item {
+    border-bottom: 1px solid #333;
+    padding: 8px 15px;
+}
+
+.donation-item:last-child {
+    border-bottom: none;
+}
+
+.donation-item .donor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff0;
+}
+
+.donation-item .amount {
+    color: #0f0;
+}
+
+.donation-item .message {
+    font-style: italic;
+    color: #ccc;
+}

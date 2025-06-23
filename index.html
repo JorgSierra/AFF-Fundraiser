@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/donationsStyle.css">
 
     <link rel="icon" href="public/assets/images/Parachute.png">
     <title>AFF Fundraiser</title>
@@ -30,8 +31,10 @@
         </div>
     </div>
 
-    <div id="contentBox" class="jost-ligth">
+    <div id="contentBox" class="jost-light">
         <img src="public/assets/images/Logo_NoBG.png" id="contentLogo" alt="Fuel my jump! logo">
+
+        <!-- TODO: hidden content to develop the progress bar -->
 
         <div id="pitch">
             <p class="jost-bold-title">🪂 Fuel My Jump! - <span class="italic">Help Jorge yeet himself into the stratosphere</span></p>
@@ -51,8 +54,21 @@
             </p>
         </div>
 
-        <a href="https://venmo.com/code?user_id=4140527872116767635&created=1750225955" target="_blank" class="donate-button">Donate today. Regret nothing.</a> 
+        <a href="https://venmo.com/code?user_id=4140527872116767635&created=1750225955" target="_blank" class="donate-button" aria-label="Donate to support Jorge's skydiving course">Donate today. Regret nothing.</a> 
 
+        <div class="donations">
+            <div class="progress-container">
+                <div class="progress-overlay" id="progress-overlay"></div>
+            </div>
+            
+            <div class="progress-text" id="progress-text">0%</div>
+            
+            <div class="donations-list" id="donations-list">
+                <h3>Supporters</h3>
+                <!-- Donation items will appear here -->
+            </div>
+        </div>
+        
         <div class="extra-info">
             <p>Icons created by <a href="https://www.flaticon.com/" target="_blank">Flaticon<img id="youtubeLogo" src="public/assets/images/Flaticon_Logo.png" alt="Flaticon Logo"></a></p>
             <p>🎬Video edited using clips from video by Furetto FreeFly: <a href="https://www.youtube.com/watch?v=mDWcyrlWZPk" target="_blank">YouTube<img id="youtubeLogo" src="public/assets/images/YouTube_Logo.png" alt="YouTube Logo"></a></p>
