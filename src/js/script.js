@@ -14,16 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     loadDonations();
 });
 
-let endTime;
-video.addEventListener('loadedmetadata', () => {
-    endTime = video.duration;
-});
-
 clickOverlay.addEventListener('click', () => {
+    console.log('overlay')
     landingLogo.classList.add('video');
     landingPrompt.classList.add('video');
     videoContainer.classList.add('video');
-    clickOverlay.classList.add('video');
     video.classList.add('video');
     video.play();
     video.muted = false;
@@ -37,7 +32,10 @@ video.ontimeupdate = (e) => {
 };
 
 skipBtn.addEventListener('click', () => {
-    video.currentTime = endTime;
+    console.log('skibidi')
+    console.log(video.currentTime)
+    video.currentTime = video.duration - 0.01;
+    console.log(video.currentTime)
 });
 
 video.onended = (e) => {

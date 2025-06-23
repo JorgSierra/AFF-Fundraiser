@@ -69,7 +69,7 @@ a {
   animation: blink 0.8s infinite;
 }
 
-#landingLogo.video, #clickPrompt.video, #clickOverlay.video #videoContainer {
+#landingLogo.video, #clickPrompt.video, #clickOverlay.video, #videoContainer {
   display: none;
 }
 
