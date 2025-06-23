@@ -6,6 +6,7 @@ const landingPrompt = document.getElementById('clickPrompt');
 const videoContainer = document.getElementById('videoContainer');
 const video = document.getElementById('video');
 const skipBtn = document.getElementById("skipBtn");
+const skipLink = document.getElementById("skip-link");
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 clickOverlay.addEventListener('click', () => {
-    console.log('overlay')
+    skipLink.style.display = "none";
     landingLogo.classList.add('video');
     landingPrompt.classList.add('video');
     videoContainer.classList.add('video');
@@ -31,17 +32,17 @@ video.ontimeupdate = (e) => {
     }
 };
 
-skipBtn.addEventListener('click', () => {
-    console.log('skibidi')
-    console.log(video.currentTime)
-    video.currentTime = video.duration - 0.01;
-    console.log(video.currentTime)
-});
-
-video.onended = (e) => {
+const goContent = () => {
+    skipLink.style.display = "none";
     landing.style.display = "none";
     content.style.display = "flex";
 }
+
+skipBtn.addEventListener('click', () => video.currentTime = video.duration - 0.02);
+video.onended = (e) => goContent();
+skipLink.addEventListener('click', () => goContent());
+
+
 
 async function loadDonations() {
     try {
